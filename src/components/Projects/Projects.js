@@ -5,10 +5,12 @@ import Particle from "../Particle";
 import OneForAll from "../../Assets/Projects/OneForAll.png";
 import UpHills from "../../Assets/Projects/UpHills.png";
 import Stocking from "../../Assets/Projects/Stocking.png";
+import Footer from "../Footer";
 
 
 function Projects() {
   return (
+    <div>
     <Container fluid className="project-section">
       <Particle />
       <Container>
@@ -51,6 +53,8 @@ function Projects() {
         </Row>
       </Container>
     </Container>
+      <Footer/>
+    </div>
   );
 }
 

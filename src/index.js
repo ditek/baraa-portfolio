@@ -3,11 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Audio from "./components/Home/Audio";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Audio/>
     <App />
   </React.StrictMode>,
   document.getElementById("root")

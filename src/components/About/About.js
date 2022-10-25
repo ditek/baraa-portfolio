@@ -5,10 +5,12 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
-import mp4_file from "../../Assets/Kaizo Success.mp4";
+import about from "../../Assets/about.png";
+import Footer from "../Footer";
 
 function About() {
   return (
+    <div>
     <Container fluid className="about-section">
       <Particle />
       <Container>
@@ -25,9 +27,7 @@ function About() {
           <Col
             md={6}
           >
-            <video controls style={{height:'350px', width:'350px'}}>
-             <source src={mp4_file}/>
-            </video>
+            <img style={{width:'100%'}} src={about} alt="guy working"></img>
             
           </Col>
           <p style={{ color: "rgb(155 126 172)", padding:'80px'}}>
@@ -46,10 +46,10 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
-
-        <Github />
       </Container>
     </Container>
+      <Footer/>
+      </div>
   );
 }
 

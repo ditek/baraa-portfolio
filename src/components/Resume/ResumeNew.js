@@ -5,6 +5,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 import pdf from "../../Assets/Baraa Jadaan's Resume.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import Footer from "../Footer";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -12,8 +13,7 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Container>
-        <Row style={{ justifyContent: "center", alignItems: "center", margin:'60px 0' }}>
+        <Row style={{ justifyContent: "center", alignItems: "center"}}>
           <Col
             md={6}
             style={{
@@ -32,14 +32,12 @@ function ResumeNew() {
           </Col>
           <Col
             md={6}
-            
           >
-            <img style={{ width:'300px' }} src="https://i.ibb.co/yXf8K0v/Baraa-Jadaan-s-Resume-n.jpg" alt="Baraa-Jadaan-s-Resume-n" border="0"></img>
+            <img style={{ width:'350px' }} src="https://i.ibb.co/yXf8K0v/Baraa-Jadaan-s-Resume-n.jpg" alt="Baraa-Jadaan-s-Resume-n" border="0"></img>
           </Col>
         </Row>
       </Container>
-      </Container>
-    </div>
+      </div>
   );
 }
 
