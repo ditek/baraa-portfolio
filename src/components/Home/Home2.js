@@ -4,7 +4,6 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -53,7 +52,7 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
-        <Row style={{marginTop: '50px'}}>
+        <Row style={{ marginTop: '50px' }}>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <ul className="home-about-social-links">
